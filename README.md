@@ -2,4 +2,18 @@
 
 Various HTML, PHP, and SSI files for checking real-world performance of web hosts
 
-Upload these files to a web host, and then test the speed of your host using GTMetrix, WebPageTest, or plain old Apache Bench.
+Upload these files to a web host, and then test the speed of your host using [GTMetrix](https://gtmetrix.com), [WebPageTest](http://www.webpagetest.org), or plain old [Apache Bench](https://httpd.apache.org/docs/2.2/programs/ab.html).
+
+The goal is to have each file with the same content, but delivering that content slightly differently so you can see differences in web host performance, although you could also use it to check differences in delivery methods.
+
+In addition to having three different delivery methods, there are also three different coding techniques employed.
+
+Static: With these files, the CSS and JS resources are called individually, and served from the same server that hosts the files. Virtually all websites used to be built this way, once upon a time.
+
+Combined: With these files, the CSS and JS resources are combined and minified, so there is only one CSS call and only one JS call. The CSS and JS resources are served from the same server that hosts the files. This is the new way of building sites that require CSS and JS resources, where the trade-off for the larger file size is the reduction in the number of HTTP requests.
+
+CDN: With these files, the CSS and JS resources are called individually from CDN sources external to the web host being tested. This technique off-loads some of the duties for serving the site to computers around the globe, the hope being that between positioning the resources closer to the end user and browser caching, there will be an overall reduction in page-load times.
+
+In each case, the CSS and JS resources are for a [Bootstrap](http://getbootstrap.com) site that also uses [Font Awesome](http://fontawesome.io), which means of course that it loads JS both for Bootstrap and the prerequisite [jQuery](http://jquery.com).
+
+One other aspect of web hosting you should be able to see with these files is the difference between an HTTP/1.x host and an HTTP/2 host, because HTTP/2 allows multiple resources to be downloaded to the browser at once. If it does (and you&rsquo;re using an HTTP/2 hosting service), then you will be able to save yourself a ton of time and aggravation by not having to combine your CSS and JS files.
