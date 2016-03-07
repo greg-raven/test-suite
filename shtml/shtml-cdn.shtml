@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8" />
 	<title>SHTML with CDN resource calls</title>
-<!-- #include virtual=“/_assets/includes/meta-cdn.htm” -->
+<!--#include virtual="/_assets/includes/meta-cdn.htm" -->
 </head>
 <body>
-<!-- #include virtual=“/_assets/includes/page-content.htm” -->
-<!-- #include virtual=“/_assets/includes/js-cdn.htm” -->
+<!--#include virtual="/_assets/includes/page-content.htm" -->
+<!--#include virtual="/_assets/includes/js-cdn.htm" -->
 </body>
 </html>
