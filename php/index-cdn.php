@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Test suite page: PHP</title>
+	<title>PHP with CDN resource calls</title>
 	<meta name="generator" content="BBEdit Prerelease" />
 </head>
 <body>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Sample ApacheBench results</title>
+<!-- minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<meta name="generator" content="BBEdit Prerelease" />
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>
+				Sample ApacheBench results
+			</h1>
+			<h2>
+				Static HTML
+			</h2>
+			<h3>
+				With CDN resources
+			</h3>
+			<pre>
+Server Software:        Apache/2.4.16
+Server Hostname:        test-suite.site
+Server Port:            80
+
+Document Path:          /html/static-cdn.html
+Document Length:        7801 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.023 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      806000 bytes
+HTML transferred:       780100 bytes
+Requests per second:    4376.56 [#/sec] (mean)
+Time per request:       0.228 [ms] (mean)
+Time per request:       0.228 [ms] (mean, across all concurrent requests)
+Transfer rate:          34448.31 [Kbytes/sec] received
+			</pre>
+			<h3>
+				With combined local resources
+			</h3>
+			<pre>
+Server Software:        Apache/2.4.16
+Server Hostname:        test-suite.site
+Server Port:            80
+
+Document Path:          /html/static-local-combined.html
+Document Length:        7545 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.024 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      780400 bytes
+HTML transferred:       754500 bytes
+Requests per second:    4147.83 [#/sec] (mean)
+Time per request:       0.241 [ms] (mean)
+Time per request:       0.241 [ms] (mean, across all concurrent requests)
+Transfer rate:          31610.99 [Kbytes/sec] received
+			</pre>
+			<h3>
+				With separate local resources
+			</h3>
+			<pre>
+Server Software:        Apache/2.4.16
+Server Hostname:        test-suite.site
+Server Port:            80
+
+Document Path:          /html/static-local-multi.html
+Document Length:        7711 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.024 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      797000 bytes
+HTML transferred:       771100 bytes
+Requests per second:    4175.71 [#/sec] (mean)
+Time per request:       0.239 [ms] (mean)
+Time per request:       0.239 [ms] (mean, across all concurrent requests)
+Transfer rate:          32500.43 [Kbytes/sec] received
+			</pre>
+			<h2>
+				PHP
+			</h2>
+			<h3>
+				With CDN resources
+			</h3>
+			<pre>
+			</pre>
+			<h3>
+				With combined local resources
+			</h3>
+			<pre>
+			</pre>
+			<h3>
+				With separate local resources
+			</h3>
+			<pre>
+			</pre>
+			<h2>
+				SSI / SHTML
+			</h2>
+			<h3>
+				With CDN resources
+			</h3>
+			<pre>
+			</pre>
+			<h3>
+				With combined local resources
+			</h3>
+			<pre>
+			</pre>
+			<h3>
+				With separate local resources
+			</h3>
+			<pre>
+			</pre>
+		</div>
+	</div>
+</div>
+<!-- minified JavaScript -->
+<script src="http://code.jquery.com/jquery-2.1.4.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+</script>
+</body>
+</html>
