@@ -10,9 +10,9 @@ In addition to having three different delivery methods, there are also three dif
 
 **Multiple local**: With these files, each CSS and JS resource is called individually, and served from the same server that hosts the files. Virtually all websites used to be built this way, once upon a time.
 
-**Combined local**: With these files, the CSS and JS resources are combined and minified, so there is only one CSS call and only one JS call per page. The CSS and JS resources are served from the same server that hosts the files. This is the new way of building sites that require CSS and JS resources, where the trade-off for the larger file size is the reduction in the number of HTTP requests.
+**Combined local**: With these files, CSS and JS resources are combined and minified, so there is only one CSS call and only one JS call per page. The CSS and JS resources are served from the same server that hosts the files. This is the new way of building sites that require CSS and JS resources, where the trade-off for the larger file size is the reduction in the number of HTTP requests.
 
-**Content Delivery Network (CDN)**: With these files, the CSS and JS resources are called individually from CDN sources external to the web host being tested. This technique off-loads some of the duties for serving the site to computers around the globe, the hope being that between positioning the resources closer to the end user and browser caching, there will be an overall reduction in page-load times.
+**Content Delivery Network (CDN)**: With these files, the CSS and JS resources are called individually from CDN sources external to the web host being tested. This technique off-loads some of the duties for serving the site to computers around the globe, the hope being that between positioning the resources closer to the end user and browser caching, there will be an overall reduction in page-load times, despite the increased number of HTTP requests.
 
 In each case, the CSS and JS resources are for a [Bootstrap](http://getbootstrap.com) site that also uses [Font Awesome](http://fontawesome.io), which means of course that it loads JS both for Bootstrap and the prerequisite [jQuery](http://jquery.com).
 
@@ -21,4 +21,4 @@ One other aspect of web hosting you should be able to see with these files is th
 **Recommended use**
 
 1. Upload the &ldquo;test-suite&rdquo; folder to the server you wish to test.
-2. Point your testing software at each of the test files of interest. If you have no plans to create an SSI/SHTML website on that server, for example, there is no need to run the tests.
+2. Point your testing software at each of the test files of interest. If you have no plans to create an SSI/SHTML website on a particular server, for example, there is no need to run the tests.
