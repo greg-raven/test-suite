@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>SHTML with combined local resource calls</title>
+<!--#include virtual="/test-suite/_assets/includes/meta-local-combined.htm" -->
+</head>
+<body>
+<!--#include virtual="/test-suite/_assets/includes/page-content.htm" -->
+<!--#include virtual="/test-suite/_assets/includes/js-local-combined.htm" -->
+</body>
+</html>

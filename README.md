@@ -17,3 +17,8 @@ In addition to having three different delivery methods, there are also three dif
 In each case, the CSS and JS resources are for a [Bootstrap](http://getbootstrap.com) site that also uses [Font Awesome](http://fontawesome.io), which means of course that it loads JS both for Bootstrap and the prerequisite [jQuery](http://jquery.com).
 
 One other aspect of web hosting you should be able to see with these files is the difference between an HTTP/1.x host and an HTTP/2 host, because HTTP/2 was designed to allow multiple resources to be downloaded to the browser at once. If it does (and you&rsquo;re using an HTTP/2 hosting service), then you will be able to save yourself a ton of time and aggravation by not having to combine your CSS and JS files.
+
+**Recommended use**
+
+1. Upload the &ldquo;test-suite&rdquo; folder to the server you wish to test.
+2. Point your testing software at each of the test files of interest. If you have no plans to create an SSI/SHTML website on that server, for example, there is no need to run the tests.
