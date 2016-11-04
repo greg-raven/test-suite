@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Main document</title>
+	<meta name="generator" content="BBEdit 11.6" />
+	<style>
+		h3 {
+		  color: red;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js">
+	</script>
+</head>
+<body>
+<h1>
+	Main document
+</h1>
+<div id="warning1">
+</div>
+<div id="include1">
+</div>
+<div id="include2">
+</div>
+<div id="warning2">
+</div>
+<hr>
+<div id="test">
+</div>
+<!--
+<script>
+	"use strict";
+	var XMLHttpRequest;
+	var document;
+	var req = new XMLHttpRequest();
+	req.onload = function () {
+		document.getElementById("test").innerHTML = this.responseText;
+	};
+	req.open("get", "omnibus.htm#include1", true);
+	req.send();
+</script>
+<script>
+	"use strict";
+	var XMLHttpRequest;
+	var document;
+	var req = new XMLHttpRequest();
+	req.onload = function () {
+		document.getElementById("include2").innerHTML = this.responseText;
+	};
+	req.open("get", "include2.htm", true);
+	req.send();
+</script>
+<script>
+	"use strict";
+	var XMLHttpRequest;
+	var document;
+	var req = new XMLHttpRequest();
+	req.onload = function () {
+		document.getElementById("warnings").innerHTML = this.responseText;
+	};
+	req.open("get", "warnings.htm#warning", true);
+	req.send();
+</script>
+ -->
+<script>
+	$( document ).ready(function () {
+	    $( "#include1" ).load( "/omnibus.htm #include1" );
+	    $( "#include2" ).load( "/omnibus.htm #include2" );
+	    $( "#warning1" ).load( "/omnibus.htm #warning" );
+	    $( "#warning2" ).load( "/omnibus.htm #outdated" );
+	});
+</script>
+</body>
+</html>
