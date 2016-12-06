@@ -18,6 +18,12 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/_assets\/js\/combined-min.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_assets\/js\/combined-min.js.map",
+		"oF": 0
+		},
 	"\/README.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -3892,13 +3898,13 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/test-suite\/_assets\/js\/jquery-2.1.4.min.js": {
+	"\/test-suite\/_assets\/js\/jquery.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "\/test-suite\/_assets\/js\/min\/jquery-2.1.4.min-min.js",
-		"oF": 0,
-		"sC": 1,
+		"oA": 0,
+		"oAP": "\/test-suite\/_assets\/js\/jquery-min.js",
+		"oF": 2,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/test-suite\/html\/index.html": {
@@ -4034,14 +4040,8 @@
 	"\/test-suite\/_assets\/js\/combined.js": [
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/test-suite\/_assets\/js\/jquery-2.1.4.min.js",
-			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/test-suite\/_assets\/bower_components\/bootstrap-sass\/assets\/javascripts\/bootstrap.js",
-			"position": 1,
+			"position": 0,
 			"type": 0
 			}
 		]
