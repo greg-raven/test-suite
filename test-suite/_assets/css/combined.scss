@@ -1,4 +1,6 @@
-$icon-font-path: "/_assets/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-$fa-font-path: "/_assets/bower_components/font-awesome/fonts" !default;
-@import "../bower_components/font-awesome/scss/font-awesome.scss";
+$icon-font-path: "../_assets/bootstrap-sass/fonts/bootstrap/";
+@import "../bootstrap-sass/stylesheets/_bootstrap.scss";
+$fa-font-path: "../_assets/font-awesome/fonts/" !default;
+@import "../font-awesome/css/font-awesome.css";
+// @codekit-prepend ../_assets/bootstrap-scss/stylesheets/_bootstrap.scss
+// @codekit-prepend ../_assets/font-awesome/css/font-awesome.css

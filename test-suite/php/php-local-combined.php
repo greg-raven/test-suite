@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8" />
 	<title>PHP with combined local resource calls</title>
-<?php include $_SERVER['DOCUMENT_ROOT'].'/test-suite/_assets/includes/meta-local-combined.htm'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/_assets/includes/meta-local-combined.htm'; ?>
 </head>
 <body>
-<?php include $_SERVER['DOCUMENT_ROOT'].'/test-suite/_assets/includes/page-content.htm'; ?>
-<?php include $_SERVER['DOCUMENT_ROOT'].'/test-suite/_assets/includes/js-local-combined.htm'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/_assets/includes/page-content.htm'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/_assets/includes/js-local-combined.htm'; ?>
 </body>
 </html>
