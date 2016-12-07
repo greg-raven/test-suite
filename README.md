@@ -22,3 +22,14 @@ One other aspect of web hosting you should be able to see with these files is th
 
 1. Upload the &ldquo;test-suite&rdquo; folder to the server you wish to test.
 2. Point your testing software at each of the test files of interest. If you have no plans to create an SSI/SHTML website on a particular server, for example, there is no need to run the tests.
+
+**Request**
+
+If you copy these files for more than infrequent personal use, please replace my Font Awesome CDN code with your own. Thank you.
+
+---
+
+**Version history**
+
++ December 6, 2016 &mdash; update to jQuery 3.1.1, Bootstrap 3.3.7.
++ January 3, 2016 &mdash; created
