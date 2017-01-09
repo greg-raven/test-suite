@@ -14,6 +14,8 @@ In addition to having three different delivery methods, there are also three dif
 
 **Content Delivery Network (CDN)**: With these files, the CSS and JS resources are called individually from CDN sources external to the web host being tested. This technique off-loads some of the duties for serving the site to computers around the globe, the hope being that between positioning the resources closer to the end user and browser caching, there will be an overall reduction in page-load times, despite the increased number of HTTP requests.
 
+**Baseline**: These are three HTML files with identical content and construction, but with different filename extensions (HTML, PHP, and SHTML). These will reveal any inherent hosting-speed differences in your server.
+
 In each case, the CSS and JS resources are for a [Bootstrap](http://getbootstrap.com) site that also uses [Font Awesome](http://fontawesome.io), which means of course that it loads JS both for Bootstrap and the prerequisite [jQuery](http://jquery.com).
 
 One other aspect of web hosting you should be able to see with these files is the difference between an HTTP/1.x host and an HTTP/2 host, because HTTP/2 was designed to allow multiple resources to be downloaded to the browser at once. If it does (and you&rsquo;re using an HTTP/2 hosting service), then you will be able to save yourself a ton of time and aggravation by not having to combine your CSS and JS files.
@@ -31,5 +33,6 @@ If you copy these files for more than infrequent personal use, please replace my
 
 **Version history**
 
++ Added &ldquo;baseline&rdquo; file set
 + December 6, 2016 &mdash; update to jQuery 3.1.1, Bootstrap 3.3.7.
 + January 3, 2016 &mdash; created

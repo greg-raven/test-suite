@@ -56,6 +56,14 @@
 				<li><a href="shtml/shtml-cdn.shtml">SHTML with CDN resource calls</a></li>
 			</ul>
 			<p>
+				<b>Baseline:</b> With these files, the HTML content is identical in each of the three cases, with no external resource calls (except for the single image file). Timing differences among these files will show your server&rsquo;s inherent hosting-speed differences based solely on the filename extention.
+			</p>
+			<ul>
+				<li><a href="baseline/apache-bench.html">HTML with HTML filename extension</a></li>
+				<li><a href="baseline/apache-bench.php">HTML with PHP filename extension</a></li>
+				<li><a href="baseline/apache-bench.shtml">HTML with SHTML filename extension</a></li>
+			</ul>
+			<p>
 				In each case, the CSS and JS resources are for a <a href="http://getbootstrap.com">Bootstrap</a> site that also uses <a href="http://fontawesome.io">Font Awesome</a>, which means of course that it also loads JavaScript both for Bootstrap and the prerequisite <a href="http://jquery.com">jQuery</a>.
 			</p>
 			<p>

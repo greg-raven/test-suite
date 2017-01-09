@@ -2842,6 +2842,30 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"\/test-suite\/baseline\/apache-bench.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/test-suite\/baseline\/apache-bench.html",
+		"oF": 0
+		},
+	"\/test-suite\/baseline\/apache-bench.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/test-suite\/baseline\/apache-bench.php",
+		"oF": 0
+		},
+	"\/test-suite\/baseline\/apache-bench.shtml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/test-suite\/baseline\/apache-bench.shtml",
+		"oF": 0
+		},
+	"\/test-suite\/baseline\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/test-suite\/baseline\/index.html",
+		"oF": 0
+		},
 	"\/test-suite\/html\/index.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -2864,6 +2888,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/test-suite\/html\/static-local-multiple.html",
+		"oF": 0
+		},
+	"\/test-suite\/index-PreviewTemp-0329C510-78E3-4B99-B0CB-07CFD92FE444.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/test-suite\/index-PreviewTemp-0329C510-78E3-4B99-B0CB-07CFD92FE444.html",
 		"oF": 0
 		},
 	"\/test-suite\/index.html": {
