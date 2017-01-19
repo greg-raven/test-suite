@@ -7,8 +7,22 @@
 		"uuidString": "E62F974A-1739-4E39-8553-840388A810A8"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
+	"\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 1047,
+		"oA": 0,
+		"oAP": "\/apple-touch-icon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon.ico",
+		"oF": 0
+		},
 	"\/README.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -2890,6 +2904,12 @@
 		"oAP": "\/test-suite\/html\/static-local-multiple.html",
 		"oF": 0
 		},
+	"\/test-suite\/humans.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/test-suite\/humans.txt",
+		"oF": 0
+		},
 	"\/test-suite\/index.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -2971,7 +2991,7 @@
 	"creationDate": 499962157,
 	"displayValue": "test-suite",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-crying"
+	"iconImageName": "\/apple-touch-icon.png"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3619,6 +3639,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -4158,6 +4182,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,
