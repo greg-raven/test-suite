@@ -59,6 +59,13 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/test-suite/.htaccess": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/test-suite/.htaccess",
+		"oF": 0
+		},
 	"/test-suite/_assets/bootstrap-sass/fonts/bootstrap/glyphicons-halflings-regular.eot": {
 		"cB": 0,
 		"ft": 8192,
