@@ -25,10 +25,6 @@ One other aspect of web hosting you should be able to see with these files is th
 1. Upload the &ldquo;test-suite&rdquo; folder to the server you wish to test.
 2. Point your testing software at each of the test files of interest. If you have no plans to create an SSI/SHTML website on a particular server, for example, there is no need to run the tests.
 
-**Request**
-
-If you copy these files for more than infrequent personal use, please replace my Font Awesome CDN code with your own. Thank you.
-
 ---
 
 **Version history**
