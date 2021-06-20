@@ -1,5 +1,3 @@
-$icon-font-path: "../_assets/bootstrap-sass/fonts/bootstrap/";
+$icon-font-path: "../bootstrap-sass/fonts/bootstrap/";
 @import "../bootstrap-sass/stylesheets/_bootstrap.scss";
-@import "../fontawesome/css/fontawesome.css";
-// @codekit-prepend ../_assets/bootstrap-scss/stylesheets/_bootstrap.scss
-// @codekit-prepend ../_assets/fontawesome/css/fontawesome.css
+@import "../fontawesome/css/fontawesome.min.css";

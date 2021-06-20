@@ -2,7 +2,7 @@
 
 Various HTML, PHP, and SSI files for checking real-world performance of web hosts
 
-Upload these files to a web host, and then test the speed of your host using [GTMetrix](https://gtmetrix.com), [WebPageTest](http://www.webpagetest.org), or plain old [Apache Bench](https://httpd.apache.org/docs/2.2/programs/ab.html).
+Upload these files to a web host, and then test the speed of your host using [GTMetrix](https://gtmetrix.com), [WebPageTest](https://www.webpagetest.org), or plain old [Apache Bench](https://httpd.apache.org/docs/2.2/programs/ab.html).
 
 The goal is to have each file with the same content, while delivering that content slightly differently so you can see differences in web host performance, although you could also use it to check differences in delivery methods.
 
@@ -16,7 +16,7 @@ In addition to having three different delivery methods, there are also three dif
 
 **Baseline**: These are three HTML files with identical content and construction, but with different filename extensions (HTML, PHP, and SHTML). These will reveal any inherent hosting-speed differences in your server.
 
-In each case, the CSS and JS resources are for a [Bootstrap](http://getbootstrap.com) site, which means of course that it loads JS both for Bootstrap and the prerequisite [jQuery](http://jquery.com).
+In each case, the CSS and JS resources are for a [Bootstrap](https://getbootstrap.com) site, which means of course that it loads JS both for Bootstrap and the prerequisite [jQuery](https://jquery.com).
 
 One other aspect of web hosting you should be able to see with these files is the difference between an HTTP/1.x host and an HTTP/2 host, because HTTP/2 was designed to allow multiple resources to be downloaded to the browser at once. If it does (and you&rsquo;re using an HTTP/2 hosting service), then you will be able to save yourself a ton of time and aggravation by not having to combine your CSS and JS files.
 
