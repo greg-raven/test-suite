@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>HTML with PHP filename extension</title>
-	<meta name="generator" content="BBEdit" />
+	<meta name="generator" content="BBEdit">
 </head>
 <body>
 <div class="container">

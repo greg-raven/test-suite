@@ -1,2 +1,2 @@
-// @codekit-prepend ../_assets/js/jquery.js
-// @codekit-prepend ../_assets/bootstrap/js/bootstrap.js
+// @codekit-prepend quiet "../jquery/jquery.js";
+// @codekit-append quiet "../bootstrap-sass/javascripts/bootstrap.js";
