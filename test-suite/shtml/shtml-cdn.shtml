@@ -7,6 +7,5 @@
 </head>
 <body>
 <!--#include virtual="/_assets/includes/page-content.htm" -->
-<!--#include virtual="/_assets/includes/js-cdn.htm" -->
 </body>
 </html>
