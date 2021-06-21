@@ -5,6 +5,7 @@
 	<title>HTML with PHP filename extension</title>
 	</head>
 <body>
+<!-- #bbinclude "page-content.incl" -->
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -32,18 +33,26 @@
 			<p>
 				Deep beast Female doesn&rsquo;t <b>our</b> creeping fill <b>gathered</b> third place behold lights fruit our two. Kind creepeth creature our midst behold set days above of without doesn&rsquo;t appear great over be above set god great, she&rsquo;d. After <b>rule</b> replenish grass sea evening gathered Brought gathered image living shall don&rsquo;t of let <i>bearing</i> gathered let saying moveth, for face for every. Above earth waters multiply our brought, beginning <b>were</b> of them beginning our. From likeness and. Their abundantly good, lights yielding moved for. One life without man from herb greater. You&rsquo;re a give. Two yielding set divide bearing also, above moving spirit. Fifth under beast you&rsquo;ll <i>divided</i> moveth yielding they&rsquo;re. Herb morning him which after herb years grass Kind saying rule dry to, she&rsquo;d. You&rsquo;ll god she&rsquo;d, waters seasons be, <i>moving</i> lesser which male divided fill <b>fill</b> likeness also. <i>Thing</i> whose midst. Stars <i>behold</i> days waters midst male waters moved. Don&rsquo;t. Very second yielding upon man very multiply appear void spirit may years isn&rsquo;t. Void man. Yielding. Image <i>shall</i> great living. Have his unto called, darkness isn&rsquo;t isn&rsquo;t air. Fourth under.
 			</p>
-			<figure>
+			<figure class="text-center">
 				<img src="/_assets/img/kitten-therapy.jpg" width="800" height="450" alt="kitten-therapy" class="img-thumbnail">
 				<figcaption>
 					Therapy
 				</figcaption>
 			</figure>
-			<hr>
-			<p>
-				<a href="index.html" class="btn btn-default">Back</a>
-			</p>
 		</div>
 	</div>
 </div>
+<!-- end bbinclude -->
+<!-- #bbinclude "footer.incl"
+#LOCATION# = "/baseline/index.html"
+#LABEL# = "Baseline"
+-->
+<footer>
+	<hr>
+	<p class="text-center">
+		<a href="/index.html" class="btn btn-default">Back to the home page</a>
+	</p>
+</footer>
+<!-- end bbinclude -->
 </body>
 </html>

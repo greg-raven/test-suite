@@ -18856,12 +18856,20 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/_assets\/includes\/index.html" : {
+    "\/_assets\/includes\/footer-php.htm" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_assets\/includes\/index.html",
+      "oAP" : "\/_assets\/includes\/footer-php.htm",
+      "oF" : 0
+    },
+    "\/_assets\/includes\/footer-shtml.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_assets\/includes\/footer-shtml.htm",
       "oF" : 0
     },
     "\/_assets\/includes\/js-cdn.htm" : {

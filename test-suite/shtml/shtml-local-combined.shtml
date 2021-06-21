@@ -7,5 +7,6 @@
 </head>
 <body>
 <!--#include virtual="/_assets/includes/page-content.htm" -->
+<!--#include virtual="/_assets/includes/footer-shtml.htm" -->
 </body>
 </html>
