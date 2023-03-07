@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- #bbinclude "metatags-cdn.incl" -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<meta name="generator" content="BBEdit">
+
+<!-- end bbinclude -->
+	<title>Test suite</title>
+	<link type="text/plain" rel="author" href="/humans.txt">
+	<!-- #bbinclude "siteicons.incl" -->
+<link rel="apple-touch-icon" sizes="180x180" href="/_assets/siteicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/_assets/siteicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/_assets/siteicons/favicon-16x16.png">
+<link rel="manifest" href="/_assets/siteicons/site.webmanifest">
+<link rel="mask-icon" href="/_assets/siteicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="icon" href="/_assets/siteicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/_assets/siteicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- end bbinclude -->
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>
+				Test suite
+			</h1>
+			<p class="lead">
+				<a href="/html/index.html">HTML</a>, <a href="/php/index.html">PHP</a>, and <a href="/shtml/index.html">SHTML</a> files for checking real-world performance of web hosts
+			</p>
+			<p>
+				Upload these files to a web host, and then test the speed of your host using <a href="https://gtmetrix.com/">GTMetrix</a>, <a href="https://www.webpagetest.org/">WebPageTest</a>, or plain old <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">Apache Bench</a>.
+			</p>
+			<p>
+				The goal is to have each file with the same content, while delivering that content slightly differently so you can see differences in web host performance, although you could also use it to check differences in delivery methods.
+			</p>
+			<p>
+				In addition to having three different delivery methods, there are also three different coding techniques employed.
+			</p>
+			<p>
+				<b>Multiple local:</b> With these files, each CSS and JS resource is called individually, and served from the same server that hosts the files. Virtually all websites used to be built this way, once upon a time.
+			</p>
+			<ul>
+				<li><a href="/html/static-local-multiple.html">HTML with multiple local resource calls</a></li>
+				<li><a href="/php/php-local-multiple.php">PHP with multiple local resource calls</a></li>
+				<li><a href="/shtml/shtml-local-multiple.shtml">SHTML with multiple local resource calls</a></li>
+			</ul>
+			<p>
+				<b>Combined local:</b> With these files, the CSS and JS resources are combined and minified, so there is only one CSS call and only one JS call per page. The CSS and JS resources are served from the same server that hosts the files. This is the new way of building sites that require CSS and JS resources, where the trade-off for the larger file sizes is the reduction in the number of HTTP requests.
+			</p>
+			<ul>
+				<li><a href="/html/static-local-combined.html">HTML with combined local resource calls</a></li>
+				<li><a href="/php/php-local-combined.php">PHP with combined local resource calls</a></li>
+				<li><a href="/shtml/shtml-local-combined.shtml">SHTML with combined local resource calls</a></li>
+			</ul>
+			<p>
+				<b>Content Delivery Network (CDN):</b> With these files, the CSS and JS resources are called from CDN sources external to the web host being tested. This technique off-loads some of the duties for serving the site to computers around the globe, the hope being that between positioning the resources closer to the end user and browser caching, there will be an overall reduction in page-load times.
+			</p>
+			<ul>
+				<li><a href="/html/static-cdn.html">HTML with CDN resource calls</a></li>
+				<li><a href="/php/php-cdn.php">PHP with CDN resource calls</a></li>
+				<li><a href="/shtml/shtml-cdn.shtml">SHTML with CDN resource calls</a></li>
+			</ul>
+			<p>
+				In each case above, the CSS and JS resources are for a <a href="https://getbootstrap.com">Bootstrap</a> site, which means of course that it also loads JavaScript both for Bootstrap and the prerequisite <a href="https://jquery.com">jQuery</a>. The above pages also load <a href="https://fontawesome.com/">Font Awesome</a>, even though it is not used.
+			</p>
+			<p>
+				<b>Baseline:</b> With these files, the HTML content is identical in each of the three cases, with no external resource calls (except for the single image file). Timing differences among these files will show your server&rsquo;s inherent hosting-speed differences based solely on the filename extention.
+			</p>
+			<ul>
+				<li><a href="/baseline/apache-bench.html">HTML with HTML filename extension</a></li>
+				<li><a href="/baseline/apache-bench.php">HTML with PHP filename extension</a></li>
+				<li><a href="/baseline/apache-bench.shtml">HTML with SHTML filename extension</a></li>
+			</ul>
+			<p>
+				One other aspect of web hosting you should be able to see with these files is the difference between an HTTP/1.x host and an HTTP/2 host, because HTTP/2 was designed to allow multiple resources to be downloaded to the browser at once. If it does (and you&rsquo;re using an HTTP/2 hosting service), then you will be able to save yourself a ton of time and aggravation by not having to combine your CSS and JS files.
+			</p>
+			<p>
+				Here are some <a href="sample-results.html">sample results for the files in the test suite</a>, obtained using <a href="https://www.christian-hornung.de/">ApacheBenchX</a>.
+			</p>
+			<p>
+				<a href="https://tools.keycdn.com/http2-test">This online tool allows to check to if your server supports HTTP/2.0</a>. You can check to see if your <a href="https://http2.akamai.com/demo">browser supports HTTP/2.0 here</a>.
+			</p>
+			<p class="text-center">
+				<a href="https://github.com/greg-raven/test-suite" class="btn btn-default">View these files on GitHub</a>
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

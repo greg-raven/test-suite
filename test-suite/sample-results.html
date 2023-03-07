@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- #bbinclude "metatags-cdn.incl" -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<meta name="generator" content="BBEdit">
+
+<!-- end bbinclude -->
+	<title>Sample ApacheBench results</title>
+	</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>
+				Sample ApacheBench results
+			</h1>
+			<h2>
+				Static HTML
+			</h2>
+			<h3>
+				With CDN resources
+			</h3>
+			<pre>
+Server Software:        nginx
+Document Path:          /html/static-cdn.html
+Document Length:        7911 bytes
+Concurrency Level:      1
+Time taken for tests:   3.831 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      820700 bytes
+HTML transferred:       791100 bytes
+Requests per second:    26.10 [#/sec] (mean)
+Time per request:       38.308 [ms] (mean)
+Time per request:       38.308 [ms] (mean, across all concurrent requests)
+Transfer rate:          209.21 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean [+/-sd] median   max
+Connect:       16   19    1.6     18      25
+Processing:    16   20    1.6     19      24
+Waiting:       16   19    1.5     19      24
+Total:         33   38    2.8     38      48
+
+Percentage of the requests served within a certain time (ms)
+  50%     38
+  66%     39
+  75%     40
+  80%     41
+  90%     42
+  95%     44
+  98%     45
+  99%     48
+ 100%     48 (longest request)
+			 </pre>
+			<h3>
+				With combined local resources
+			</h3>
+			<pre>
+Server Software:        nginx
+Document Path:          /html/static-local-combined.html
+Document Length:        7675 bytes
+Concurrency Level:      1
+Time taken for tests:   3.865 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      797100 bytes
+HTML transferred:       767500 bytes
+Requests per second:    25.87 [#/sec] (mean)
+Time per request:       38.653 [ms] (mean)
+Time per request:       38.653 [ms] (mean, across all concurrent requests)
+Transfer rate:          201.39 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       16   19   2.4     18      34
+Processing:    17   20   2.2     19      31
+Waiting:       16   19   2.1     19      30
+Total:         33   39   3.9     38      53
+
+Percentage of the requests served within a certain time (ms)
+  50%     38
+  66%     39
+  75%     40
+  80%     41
+  90%     44
+  95%     46
+  98%     53
+  99%     53
+ 100%     53 (longest request)
+      </pre>
+			<h3>
+				With multiple local resources
+			</h3>
+			<pre>
+Server Software:        nginx
+Document Path:          /html/static-local-multiple.html
+Document Length:        7828 bytes
+Concurrency Level:      1
+Time taken for tests:   3.935 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      812400 bytes
+HTML transferred:       782800 bytes
+Requests per second:    25.41 [#/sec] (mean)
+Time per request:       39.354 [ms] (mean)
+Time per request:       39.354 [ms] (mean, across all concurrent requests)
+Transfer rate:          201.60 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       16   19   4.2     18      47
+Processing:    17   20   2.1     19      29
+Waiting:       17   19   2.1     19      29
+Total:         33   39   5.1     38      67
+
+Percentage of the requests served within a certain time (ms)
+  50%     38
+  66%     40
+  75%     41
+  80%     42
+  90%     44
+  95%     46
+  98%     63
+  99%     67
+ 100%     67 (longest request)
+			</pre>
+			<h2>
+				PHP
+			</h2>
+			<h3>
+				With CDN resources
+			</h3>
+			<pre>
+Server Software:        nginx
+Document Path:          /php/php-cdn.php
+Document Length:        8112 bytes
+Concurrency Level:      1
+Time taken for tests:   3.936 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      829000 bytes
+HTML transferred:       811200 bytes
+Requests per second:    25.41 [#/sec] (mean)
+Time per request:       39.359 [ms] (mean)
+Time per request:       39.359 [ms] (mean, across all concurrent requests)
+Transfer rate:          205.69 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       16   19   1.5     18      24
+Processing:    17   21   2.4     20      38
+Waiting:       17   20   2.4     20      37
+Total:         34   39   3.3     39      54
+
+Percentage of the requests served within a certain time (ms)
+  50%     39
+  66%     41
+  75%     41
+  80%     42
+  90%     43
+  95%     45
+  98%     48
+  99%     54
+ 100%     54 (longest request)
+			</pre>
+			<h3>
+				With combined local resources
+			</h3>
+			<pre>
+Server Software:        nginx
+Document Path:          /php/php-local-combined.php
+Document Length:        7887 bytes
+Concurrency Level:      1
+Time taken for tests:   3.978 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      806500 bytes
+HTML transferred:       788700 bytes
+Requests per second:    25.14 [#/sec] (mean)
+Time per request:       39.776 [ms] (mean)
+Time per request:       39.776 [ms] (mean, across all concurrent requests)
+Transfer rate:          198.01 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       16   19   2.3     19      32
+Processing:    17   21   2.0     20      30
+Waiting:       17   20   1.9     20      29
+Total:         34   40   3.6     39      55
+
+Percentage of the requests served within a certain time (ms)
+  50%     39
+  66%     41
+  75%     42
+  80%     43
+  90%     44
+  95%     46
+  98%     47
+  99%     55
+ 100%     55 (longest request)
+			</pre>
+			<h3>
+				With multiple local resources
+			</h3>
+			<pre>
+Server Software:        nginx
+Document Path:          /php/php-local-multiple.php
+Document Length:        8070 bytes
+Concurrency Level:      1
+Time taken for tests:   3.948 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      824800 bytes
+HTML transferred:       807000 bytes
+Requests per second:    25.33 [#/sec] (mean)
+Time per request:       39.476 [ms] (mean)
+Time per request:       39.476 [ms] (mean, across all concurrent requests)
+Transfer rate:          204.04 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       16   19   1.6     18      25
+Processing:    17   21   2.5     20      40
+Waiting:       17   20   2.5     20      40
+Total:         34   39   3.6     39      62
+
+Percentage of the requests served within a certain time (ms)
+  50%     39
+  66%     40
+  75%     41
+  80%     42
+  90%     43
+  95%     45
+  98%     47
+  99%     62
+ 100%     62 (longest request)
+			</pre>
+			<h2>
+				SHTML
+			</h2>
+			<h3>
+				With CDN resources
+			</h3>
+			<pre>
+Server Software:        nginx
+Document Path:          /shtml/shtml-cdn.shtml
+Document Length:        8117 bytes
+Concurrency Level:      1
+Time taken for tests:   4.074 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      831700 bytes
+HTML transferred:       811700 bytes
+Requests per second:    24.55 [#/sec] (mean)
+Time per request:       40.740 [ms] (mean)
+Time per request:       40.740 [ms] (mean, across all concurrent requests)
+Transfer rate:          199.36 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       16   20   3.9     18      48
+Processing:    17   21   4.0     20      50
+Waiting:       17   20   4.0     20      50
+Total:         34   41   6.8     39      79
+
+Percentage of the requests served within a certain time (ms)
+  50%     39
+  66%     41
+  75%     42
+  80%     42
+  90%     45
+  95%     51
+  98%     73
+  99%     79
+ 100%     79 (longest request)
+			</pre>
+			<h3>
+				With combined local resources
+			</h3>
+			<pre>
+Server Software:        nginx
+Document Path:          /shtml/shtml-local-combined.shtml
+Document Length:        7892 bytes
+Concurrency Level:      1
+Time taken for tests:   3.928 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      809200 bytes
+HTML transferred:       789200 bytes
+Requests per second:    25.46 [#/sec] (mean)
+Time per request:       39.281 [ms] (mean)
+Time per request:       39.281 [ms] (mean, across all concurrent requests)
+Transfer rate:          201.17 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       16   19   1.6     19      26
+Processing:    17   20   1.8     20      29
+Waiting:       17   20   1.5     20      23
+Total:         34   39   2.9     39      47
+
+Percentage of the requests served within a certain time (ms)
+  50%     39
+  66%     40
+  75%     42
+  80%     42
+  90%     42
+  95%     44
+  98%     47
+  99%     47
+ 100%     47 (longest request)
+			</pre>
+			<h3>
+				With multiple local resources
+			</h3>
+			<pre>
+Server Software:        nginx
+Document Path:          /shtml/shtml-local-multiple.shtml
+Document Length:        8075 bytes
+Concurrency Level:      1
+Time taken for tests:   4.059 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      827500 bytes
+HTML transferred:       807500 bytes
+Requests per second:    24.64 [#/sec] (mean)
+Time per request:       40.592 [ms] (mean)
+Time per request:       40.592 [ms] (mean, across all concurrent requests)
+Transfer rate:          199.08 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       16   19   3.5     19      48
+Processing:    18   21   6.7     20      67
+Waiting:       17   20   4.6     20      49
+Total:         34   40   9.3     39     114
+
+Percentage of the requests served within a certain time (ms)
+  50%     39
+  66%     40
+  75%     41
+  80%     42
+  90%     44
+  95%     47
+  98%     85
+  99%    114
+ 100%    114 (longest request)
+			</pre>
+			<p>
+				Not seeing results such as these? Try Digital Ocean. <a href="https://m.do.co/c/37b0b8e19896">Sign up using my link</a> and receive $10 in credit.
+			</p>
+			<figure>
+				<a href="https://m.do.co/c/37b0b8e19896"><img src="/_assets/img/digital-ocean.png" width="624" height="99" alt="Digital Ocean discount link" class="img-responsive"></a>
+			</figure>
+			<p>
+				Want the best way to deploy and manage Digital Ocean servers? Try ServerPilot. <a href="https://www.serverpilot.io/?refcode=7f45baaec10e">Sign up using my link</a> and receive $10 in credit.
+			</p>
+			<figure>
+				<a href="https://www.serverpilot.io/?refcode=7f45baaec10e"><img src="/_assets/img/server-pilot.png" width="624" height="130" alt="ServerPilot discount link" class="img-responsive"></a>
+			</figure>
+		</div>
+	</div>
+</div>
+<!-- #bbinclude "footer.incl" -->
+<footer>
+	<hr>
+	<p class="text-center">
+		<a href="/index.html" class="btn btn-default">Back to the home page</a>
+	</p>
+</footer>
+<!-- end bbinclude -->
+</body>
+</html>

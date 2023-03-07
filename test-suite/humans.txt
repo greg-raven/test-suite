@@ -1,0 +1,51 @@
+/* TEAM */
+Ibis: Greg Raven
+Site: https://en.gravatar.com/gregraven
+Gab: https://gab.com/gregraven
+Location: California
+
+Narthex: Dik Dik, Boy from Africa
+Site: https://en.gravatar.com/gregraven
+Gab: https://gab.com/gregraven
+Location: California
+
+Hautboy: Victor Max
+Site: https://en.gravatar.com/gregraven
+Gab: https://gab.com/gregraven
+Location: California
+
+Sackbut: Secretary-General Joseph Hill
+Site: https://en.gravatar.com/gregraven
+Gab: https://gab.com/gregraven
+Location: California
+
+Sanctum: Hugh Cant
+Site: https://en.gravatar.com/gregraven
+Gab: https://gab.com/gregraven
+Location: California
+
+Jester: Anne T. Gravity
+Site: https://en.gravatar.com/gregraven
+Gab: https://gab.com/gregraven
+Location: California
+
+Grand Curator: Bumper "Beanpole" Blimpley
+Site: https://en.gravatar.com/gregraven
+Gab: https://gab.com/gregraven
+Location: California
+
+His Excellency the President for Life: Field Marshall Al-Hadji Doctor Raven Dada, LLD, PhD, BVD, LSD, APD, Conqueror of the British Empire in Africa in General and Uganda in Specific
+Site: https://en.gravatar.com/gregraven
+Gab: https://gab.com/gregraven
+Location: California
+
+/* THANKS */
+Name: Mom
+
+/* SITE */
+Language:  English
+Doctype: HTML5
+Standards: HTML5, CSS3, PHP, SSI/SHTML, JavaScript
+Components: jQuery, Bootstrap, Font Awesome
+Software: BBEdit, Pixelmator Pro, Apache Bench
+Hosting: GitHub, Orgfree/FreeWHA
