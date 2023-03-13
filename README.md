@@ -29,6 +29,7 @@ One other aspect of web hosting you should be able to see with these files is th
 
 **Version history**
 
++ March 13, 2023 &mdash; NFSHost version has died. Now available only at [InfinityFree.net](http://test-suite.infinityfreeapp.com)
 + January 7, 2023 &mdash; added link to the Kitten Therapy video
 + January 7, 2023 &mdash; fixed some minor coding omissions
 + January 6, 2023 &mdash; deployed these files to [InfinityFree.net](http://test-suite.infinityfreeapp.com) and [NearlyFreeSpeech.net](https://test-suite.nfshost.com)
